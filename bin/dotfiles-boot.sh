@@ -1,8 +1,8 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 pushd ~
 git init
-git config --local status.ignoreUntracked on
+git config --local status.showUntracked on
 git remote add origin https://github.com/duog/dotfiles
 git checkout -f -b origin/master
 git submodule update --init --recursive
