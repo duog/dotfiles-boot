@@ -2,7 +2,7 @@
 
 pushd ~
 git init
-git config --local status.showUntracked on
+git config --local status.showUntracked off
 git remote add origin https://github.com/duog/dotfiles
 git checkout -f -b origin/master
 git submodule update --init --recursive
