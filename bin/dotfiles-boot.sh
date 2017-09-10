@@ -3,8 +3,9 @@
 pushd ~
 git init
 git config --local status.showUntrackedFiles no
-git remote add origin https://github.com/duog/dotfiles
-git checkout -f -b origin/master
+git remote add -f origin https://github.com/duog/dotfiles
+git fetch origin
+git checkout -f master
 git submodule update --init --recursive
 
 sudo usermod -s /bin/zsh ${USER}
